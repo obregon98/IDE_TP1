@@ -46,11 +46,18 @@ nav a:hover{
 
 section{
     display: flex;
-    padding: 20px;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px 0;
 }
 
 section img{
-    height: 500px;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
 }
 
 section h2{
@@ -58,6 +65,8 @@ section h2{
 }
 
 article, aside{
+  flex: 1 1 0;
+  min-width: 0;
   padding: 20px;
   /*background-color: #fba3c5;*/
   font-family: 'Poppins', sans-serif;
